@@ -20,10 +20,12 @@ app.get('/', (req, res) => {
   res.status(200).send(page)
 })
 
+const port = process.env.PORT || 8080
+
 // Opens a socket and listens for connections only if there is no parent module running the script.
 if (!module.parent) {
-  app.listen(8080, () => {
-    console.log('Server started on port 8080...')
+  app.listen(port, () => {
+    console.log(`Server started on port ${port}...`)
   })
 }
 

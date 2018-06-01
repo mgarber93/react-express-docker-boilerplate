@@ -1,7 +1,7 @@
 // INITIAL STATE //
 
 // for testing purposes
-export const defaultMessage = 'You are now connected to the Redux store!'
+export const defaultMessage = 'You are now connected to the hello world reducer!'
 
 const initialState = {
   message: defaultMessage
